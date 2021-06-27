@@ -1,0 +1,10 @@
+// (function () {
+//     window.scriptsLoaded++;
+//     try {
+//         var a = Math.floor(Math.random() * 10000000000000);
+//         new Image().src = '//googleads.g.doubleclick.net/pagead/viewthroughconversion/1050203916/?value=0&guid=ON&script=0&rand=' + a;
+//     }
+//     catch(e) {
+//         console.log(e.message);
+//     }
+// })();

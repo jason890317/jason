@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charSet="UTF-8" />
+    <meta name="application-name" content="sideex" />
+    <meta name="version" content="format=2.0.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untitled Test Suite 13</title>
+    <style>
+      .tac {
+        display: none;
+      }
+
+      table {
+        table-layout: fixed;
+        border-collapse: collapse;
+        width: 90%;
+        word-wrap: break-word;
+      }
+
+      th,
+      td {
+        padding: 5px;
+        border: 1px solid black;
+      }
+
+      .suite-title {
+        text-align: center;
+      }
+
+      .case {
+        margin: auto;
+      }
+
+      .comment {
+        color: #d3d3d3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div data-enable-on-playing="true" class="suite">
+      <h3 class="suite-title">Untitled Test Suite 13</h3>
+      <table class="case margin-auto" data-ns="14.16" data-enable-on-playing="true">
+        <thead>
+          <tr>
+            <th class="case-title" rowspan="1" colSpan="3">Untitled Test Case 13</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="command" data-pbw="0" data-paw="0" data-prw="0" data-pdw="0" data-comment="false">
+            <td class="command-name">open</td>
+            <td class="command-target"><datalist data-used-index="0">
+                <option class="type-other">file:///home/selab/jason/target/target.html</option>
+              </datalist><span class="target-tac tac"></span></td>
+            <td class="command-value"><datalist data-used-index="0">
+                <option class="type-other"></option>
+              </datalist><span class="value-tac tac"></span></td>
+          </tr>
+          <tr class="command" data-pbw="0" data-paw="0" data-prw="0" data-pdw="0" data-comment="false">
+            <td class="command-name">setViewportSize</td>
+            <td class="command-target"><datalist data-used-index="0">
+                <option class="type-other"></option>
+              </datalist><span class="target-tac tac"></span></td>
+            <td class="command-value"><datalist data-used-index="0">
+                <option class="type-other">1536,722</option>
+              </datalist><span class="value-tac tac"></span></td>
+          </tr>
+          <tr class="command" data-pbw="0" data-paw="0" data-prw="0" data-pdw="0" data-comment="false">
+            <td class="command-name">clickAt</td>
+            <td class="command-target"><datalist data-used-index="0">
+                <option class="type-id">id=search</option>
+                <option class="type-name">name=searchTerm</option>
+                <option class="type-xpath:dataRelative">//nav[@data-test=&#x27;headerNav&#x27;]/div[1]/form[1]/input[1]</option>
+                <option class="type-xpath:idRelative">//nav[@id=&#x27;headerMain&#x27;]/div[1]/form[1]/input[1]</option>
+                <option class="type-xpath:position">//input[1]</option>
+                <option class="type-xpath:attributes">//input[@id=&#x27;search&#x27;]</option>
+                <option class="type-css:position">css=#search</option>
+              </datalist><span class="target-tac tac"></span></td>
+            <td class="command-value"><datalist data-used-index="0">
+                <option class="type-other">96,2</option>
+              </datalist><span class="value-tac tac"></span></td>
+          </tr>
+          <tr class="command" data-pbw="0" data-paw="0" data-prw="0" data-pdw="0" data-comment="false">
+            <td class="command-name">clickAt</td>
+            <td class="command-target"><datalist data-used-index="0">
+                <option class="type-xpath:position">//button[1]/span[1]/div[1]/*[name()=&#x27;svg&#x27;][1]</option>
+                <option class="type-css:position">css=span.sc-gsTCUz.bJqTlC &gt; div.sc-hKgILt.gTLZXx &gt; svg</option>
+              </datalist><span class="target-tac tac"></span></td>
+            <td class="command-value"><datalist data-used-index="0">
+                <option class="type-other">6,18</option>
+              </datalist><span class="value-tac tac"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      const tds = document.querySelectorAll(".command-target, .command-value");
+      for (const td of tds) {
+        try {
+          const index = +td.getElementsByTagName("datalist")[0].dataset.usedIndex;
+          const options = td.getElementsByTagName("option");
+          td.appendChild(document.createTextNode(options[index].textContent));
+        } catch (error) {
+          console.error("Error when try to display target/value of this field:", td);
+        }
+      }
+    </script>
+  </body>
+
+</html>
