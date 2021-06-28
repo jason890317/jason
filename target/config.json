@@ -28,7 +28,7 @@
         ]
     },
     "report": {
-        "path": "/home/selab/jason/target/target_report/",
+        "path": "/home/selab/jason/target/target_report22/",
         "type":"json",
         "snapshot": 2,
         "snapshotQuality": 20

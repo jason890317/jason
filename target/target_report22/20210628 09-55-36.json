@@ -11,13 +11,13 @@
       1
     ]
   },
-  "title": "20210627 20-16-54",
+  "title": "20210628 09-55-36",
   "type": "chrome",
   "browser": "chrome 91.0.4472.77",
   "platform": "linux",
   "lang": null,
-  "startTime": "20210627 20:16:54",
-  "endTime": "20210627 20:17:03",
+  "startTime": "20210628 09:55:36",
+  "endTime": "20210628 09:55:44",
   "failureCaseNum": 0,
   "failureSuiteNum": 0,
   "successCaseNum": 1,
@@ -91,14 +91,14 @@
           "target": "file:///home/selab/jason/target/target.html",
           "value": "",
           "status": "success",
-          "time": 5507
+          "time": 4850
         },
         {
           "name": "setViewportSize",
           "target": "",
           "value": "1536,722",
           "status": "success",
-          "time": 636
+          "time": 569
         },
         {
           "name": "clickAt",
@@ -106,7 +106,7 @@
           "value": "96,2",
           "snapshot": "image-1",
           "status": "success",
-          "time": 1569
+          "time": 1474
         },
         {
           "name": "clickAt",
@@ -114,7 +114,7 @@
           "value": "6,18",
           "snapshot": "image-2",
           "status": "success",
-          "time": 1020
+          "time": 1184
         }
       ]
     }
