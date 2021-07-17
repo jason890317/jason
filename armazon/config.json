@@ -1,6 +1,6 @@
 {
     "input": {
-        "testSuites": ["test_target.html"]
+        "testSuites": ["test_armazon.html"]
     },
 
     "webdriver": {
