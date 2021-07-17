@@ -1,6 +1,6 @@
 {
     "input": {
-        "testSuites": ["/home/selab/jason/armazon/test_armazon.html"]
+        "testSuites": ["test_target.html"]
     },
 
     "webdriver": {
@@ -12,13 +12,12 @@
                     {
                         "active": true,
                         "capability": {
-                            "browserName": "chrome",
-                            "goog:chromeOptions": {
+                            "browserName": "firefox",
+                            "moz:firefoxOptions": {
                                 "args": [
-                                    "headless",
-                                    "disable-gpu",
-                                    "window-size=1080,720",
-                                    "no-sandbox"
+                                    "-headless",
+                                    "-window-size=1080,720",
+                                    "-no-sandbox"
                                 ]
                             }
                         }
@@ -28,7 +27,7 @@
         ]
     },
     "report": {
-        "path": "/home/selab/jason/armazon/armazon_report/",
+        "path": "/armazon_report/",
         "type":"json",
         "snapshot": 2,
         "snapshotQuality": 20
